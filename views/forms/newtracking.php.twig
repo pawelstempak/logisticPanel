@@ -1,0 +1,40 @@
+<?php /* views/newtracking.php.twig */ ?>
+{{ form_start(form) }}
+<div class="mb-3">
+    {{ form_errors(form.tracking) }}
+    {{ form_label(form.tracking, 'Tracking number', {'label_attr': {'class': 'form-label' }}) }}
+    {{ form_widget(form.tracking, {'attr': {'class': 'form-control', 'id': 'inputTrackingNumber' } } ) }}
+    <div id="nameHelp" class="form-text">Input tracking number</div>
+</div>
+<div class="mb-3">
+    {{ form_errors(form.sender_number) }}
+    {{ form_label(form.sender_number, 'Sender number', {'label_attr': {'class': 'form-label' }}) }}
+    {{ form_widget(form.sender_number, {'attr': {'class': 'form-control', 'id': 'inputSenderNumber' } } ) }}
+    <div id="nameHelp" class="form-text">Input sender number</div>
+</div>
+<div class="mb-3">
+    {{ form_errors(form.sender_id) }}
+    {{ form_label(form.sender_id, 'Sender', {'label_attr': {'class': 'form-label' }}) }}
+    {{ form_widget(form.sender_id, {'attr': {'class': 'form-control', 'id': 'inputIdNumber' } } ) }}
+    <div id="nameHelp" class="form-text">Select sender</div>
+</div>
+<div class="mb-3">
+    {{ form_errors(form.recipient_number) }}
+    {{ form_label(form.recipient_number, 'Recipient number', {'label_attr': {'class': 'form-label' }}) }}
+    {{ form_widget(form.recipient_number, {'attr': {'class': 'form-control', 'id': 'inputRecipientNumber' } } ) }}
+    <div id="nameHelp" class="form-text">Input recipient number</div>
+</div>
+<div class="mb-3">
+    {{ form_errors(form.customer_number) }}
+    {{ form_label(form.customer_number, 'Customer number', {'label_attr': {'class': 'form-label' }}) }}
+    {{ form_widget(form.customer_number, {'attr': {'class': 'form-control', 'id': 'inputSenderNumber' } } ) }}
+    <div id="nameHelp" class="form-text">Input customer number</div>
+</div>
+<div class="mb-3">
+    {{ form_errors(form.status) }}
+    {{ form_label(form.status, 'Status', {'label_attr': {'class': 'form-label' }}) }}
+    {{ form_widget(form.status, {'attr': {'class': 'form-control', 'id': 'inputSenderNumber' } } ) }}
+    <div id="nameHelp" class="form-text">Select status</div>
+</div>
+<div class="d-flex justify-content-between"><button type="submit" class="btn btn-secondary">Submit</button> <a href="/trackinglist" type="button" class="btn btn-light float-right">Cancel</a></div>
+{{ form_end(form) }}

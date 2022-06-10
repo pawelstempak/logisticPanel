@@ -1,0 +1,25 @@
+{
+    "name": "user/htdocs",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Paweł Stempak",
+            "email": "pawelstempak@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4",
+        "phpmailer/phpmailer": "^6.6",
+        "symfony/form": "^6.1",
+        "symfony/security-csrf": "^6.1",
+        "symfony/twig-bridge": "^6.1",
+        "symfony/translation": "^6.1",
+        "symfony/config": "^6.1",
+        "symfony/validator": "^6.1",
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
